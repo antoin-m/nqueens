@@ -2,7 +2,7 @@
 
 ## Project Structure
 
-The project is making use of the [hexagonal architecture](https://en.wikipedia.org/wiki/Hexagonal_architecture_(software\)), which means the domain is separated from the adapters.
+The project is making use of the [hexagonal architecture](https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)), which means the domain is separated from the adapters.
 
 In the root src folder you'll find all the sources of the engine (backtracking/constraint + configurable set of rules to apply)
 
