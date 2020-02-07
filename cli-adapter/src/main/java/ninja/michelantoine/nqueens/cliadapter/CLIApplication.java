@@ -55,7 +55,7 @@ public class CLIApplication implements Callable<Integer> {
         try {
             board = NQueensEngine.create(timeout).solve(n, rules);
         } catch (NoSolutionFoundException e) {
-            System.err.println(String.format("Could not find a solution for n=%d, l=%d", n, maxAligned));
+            System.err.println(String.format("Could not find a solution for n=%d, l=%d, t=%d", n, maxAligned, timeout));
             return 2;
         }
 
