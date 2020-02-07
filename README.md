@@ -35,7 +35,7 @@ This approach makes use of pseudorandom features and thus may not always deliver
 An engine that will use either other engine depending on the given size of the board.
 
 ---
-Here are some benchmarks made with JMH to take a closer at the performances:
+Here are some benchmarks made with JMH to take a closer look at the performances:
 ```
 Benchmark                                               Mode  Cnt    Score    Error  Units
 BackTrackingEngineBenchmark.solve8                      avgt   10    0.126 ±  0.012  ms/op
