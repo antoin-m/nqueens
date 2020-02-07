@@ -1,0 +1,32 @@
+allprojects {
+    apply plugin: 'java'
+
+    group 'ninja.michelantoine'
+    version '1.0-SNAPSHOT'
+
+    sourceCompatibility = 1.11
+
+    repositories {
+        mavenCentral()
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            failOnVersionConflict()
+
+            force group: 'junit', name: 'junit', version: '4.12'
+            force group: 'org.hamcrest', name: 'hamcrest', version: '2.2'
+            force group: 'org.openjdk.jmh', name: 'jmh-core', version: '1.23'
+            force group: 'org.openjdk.jmh', name: 'jmh-generator-annprocess', version: '1.23'
+
+            force group: 'info.picocli', name: 'picocli', version: '4.1.4'
+        }
+    }
+}
+
+dependencies {
+    testImplementation group: 'org.openjdk.jmh', name: 'jmh-core'
+    testImplementation group: 'org.openjdk.jmh', name: 'jmh-generator-annprocess'
+    testImplementation group: 'org.hamcrest', name: 'hamcrest'
+    testImplementation group: 'junit', name: 'junit'
+}
