@@ -1,4 +1,4 @@
-#A Java NQueens Problem Solver
+# A Java NQueens Problem Solver
 
 ## Project Structure
 
